@@ -1,0 +1,67 @@
+* {
+    box-sizing : border-box;
+}
+:root {
+    --light-gray: hsl(204, 43%, 93%);
+    --cyan: hsl(179, 62%, 43%);
+    --off-cyan: hsla(179, 62%, 43%, 0.699);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --font-size : 16px;
+    --small-weight : 400;
+    --strong-weight : 700;
+    --padding : 1.5rem;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    height: 100vh;
+    background : var(--light-gray);
+    display : flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card {
+    display : grid;
+    grid-template-columns : 1fr 1fr;
+    grid-template-rows: 200px 250px;
+    max-width: 50%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.our-community{
+    grid-column: 1 / span 2;
+    background : var(--light-gray);
+    color: var(--cyan);
+    padding: var(--padding);
+}
+
+.our-community h1 {
+    font-weight: var(--strong-weight);
+    font-size: var(--font-size);
+    color: var(--cyan);
+}
+
+.our-community h4 {
+    font-weight: var(--strong-weight);
+    font-size: var(--font-size);
+    color: var(--bright-yellow);
+}
+
+.our-community p{
+    font-weight: var(--strong-weight);
+    font-size: var(--font-size);
+}
+
+.subscription {
+    background : var(--cyan);
+    padding: var(--padding);
+}
+
+.why-us {
+    background : var(--off-cyan);
+    padding: var(--padding);
+}
